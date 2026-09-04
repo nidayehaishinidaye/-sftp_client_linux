@@ -1,4 +1,4 @@
-package com.sdnx.jy.rl.util;
+package com.zzzj.soft.sftp.util;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -114,7 +114,7 @@ public class SftpClient {
 
     private static void printUsage() {
         System.out.println("用法:");
-        System.out.println("  java -cp jsch.jar:sftp_client.jar com.sdnx.jy.rl.util.SftpClient \\");
+        System.out.println("  java -cp jsch.jar:sftp_client.jar com.zzzj.soft.sftp.util.SftpClient \\");
         System.out.println("       -h 主机 -P 端口 -u 用户 -pw 密码 -cmd 命令 [命令参数...]");
         System.out.println("说明: -h -P -u -pw -cmd 均为必填");
         System.out.println("命令:");

@@ -7,4 +7,4 @@
 #   ./sftp_client.sh -h 主机IP -P 端口 -u 用户 -pw '密码' -cmd get /upload/dz.json ./dz.json
 #   ./sftp_client.sh -h 主机IP -P 端口 -u 用户 -pw '密码' -cmd probe
 SHELL_DIR=$(cd $(dirname $0) && pwd)
-exec java -Dfile.encoding=UTF-8 -cp "$SHELL_DIR/sftp_client.jar" com.sdnx.jy.rl.util.SftpClient "$@"
+exec java -Dfile.encoding=UTF-8 -cp "$SHELL_DIR/sftp_client.jar" com.zzzj.soft.sftp.util.SftpClient "$@"

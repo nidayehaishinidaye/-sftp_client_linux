@@ -16,7 +16,7 @@
 sftp_client_linux/
 ├── sftp_client.jar            # fat jar（内含 jsch）
 ├── sftp_client.sh             # Linux 启动脚本
-└── src/com/sdnx/jy/rl/util/SftpClient.java   # 源码
+└── src/com/zzzj/soft/sftp/util/SftpClient.java   # 源码
 ```
 
 ## 使用方法
@@ -60,7 +60,7 @@ java -Dfile.encoding=UTF-8 -jar sftp_client.jar -h 主机IP -P 端口 -u 用户 
 
 ```bash
 mkdir -p build/classes
-javac --release 8 -encoding UTF-8 -cp jsch-2.28.7.jar -d build/classes src/com/sdnx/jy/rl/util/SftpClient.java
+javac --release 8 -encoding UTF-8 -cp jsch-2.28.7.jar -d build/classes src/com/zzzj/soft/sftp/util/SftpClient.java
 jar cfm sftp_client.jar MANIFEST.MF -C build/classes . 
 ```
 
